@@ -50,7 +50,7 @@ img {
   align-items: center;
   flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -168,6 +168,7 @@ img {
   block-size: cover;
   padding: 188px 0;
   max-width: 1440px;
+  background-size: cover;
 }
 
 .solutions-container {
@@ -308,12 +309,8 @@ img {
 }
 
 .team-title-networks-item {
-}
-
-.team-icon-box {
   width: 40px;
   height: 40px;
-  padding: 12px;
 }
 
 .team-title-networks-link:hover,
@@ -394,6 +391,7 @@ img {
 
 .portfolio-title-item {
   width: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title-item:hover {
@@ -511,14 +509,8 @@ img {
 }
 
 .footer-soc-item {
-}
-
-.footer-soc-link-box {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  padding: 8px;
 }
 
 .footer-soc-link {
@@ -528,10 +520,13 @@ img {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  padding: 8px;
 }
 
-.footer-soc-link-box:hover,
-.footer-soc-link-box:focus {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: #31d0aa;
 }
 
